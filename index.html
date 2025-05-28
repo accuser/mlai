@@ -1,5 +1,7 @@
-</html><!DOCTYPE html>
+</html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,16 +14,16 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
         }
-        
+
         .container {
             max-width: 1400px;
             margin: 0 auto;
             background: white;
             border-radius: 20px;
             padding: 30px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
         }
-        
+
         h1 {
             text-align: center;
             color: #2c3e50;
@@ -29,59 +31,76 @@
             font-size: 2.5em;
             font-weight: 700;
         }
-        
+
         .subtitle {
             text-align: center;
             color: #7f8c8d;
             margin-bottom: 40px;
             font-size: 1.2em;
         }
-        
+
         .phases-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             gap: 25px;
             margin-bottom: 40px;
         }
-        
+
         .phase {
             background: #fff;
             border-radius: 15px;
             padding: 25px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
             border-left: 6px solid;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
+
         .phase:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
         }
-        
-        .phase1 { border-left-color: #e74c3c; }
-        .phase2 { border-left-color: #f39c12; }
-        .phase3 { border-left-color: #2ecc71; }
-        .phase4 { border-left-color: #3498db; }
-        .phase5 { border-left-color: #9b59b6; }
-        .phase6 { border-left-color: #1abc9c; }
-        
+
+        .phase1 {
+            border-left-color: #e74c3c;
+        }
+
+        .phase2 {
+            border-left-color: #f39c12;
+        }
+
+        .phase3 {
+            border-left-color: #2ecc71;
+        }
+
+        .phase4 {
+            border-left-color: #3498db;
+        }
+
+        .phase5 {
+            border-left-color: #9b59b6;
+        }
+
+        .phase6 {
+            border-left-color: #1abc9c;
+        }
+
         .phase-title {
             font-size: 1.4em;
             font-weight: 700;
             margin-bottom: 8px;
             color: #2c3e50;
         }
-        
+
         .phase-description {
             color: #7f8c8d;
             margin-bottom: 20px;
             font-style: italic;
         }
-        
+
         .ksb-section {
             margin-bottom: 15px;
         }
-        
+
         .ksb-type {
             font-weight: 600;
             color: #34495e;
@@ -90,25 +109,33 @@
             align-items: center;
             gap: 8px;
         }
-        
+
         .ksb-icon {
             width: 20px;
             height: 20px;
             border-radius: 50%;
             display: inline-block;
         }
-        
-        .knowledge-icon { background: #3498db; }
-        .skills-icon { background: #2ecc71; }
-        .behaviours-icon { background: #e74c3c; }
-        
+
+        .knowledge-icon {
+            background: #3498db;
+        }
+
+        .skills-icon {
+            background: #2ecc71;
+        }
+
+        .behaviours-icon {
+            background: #e74c3c;
+        }
+
         .ksb-list {
             display: flex;
             flex-wrap: wrap;
             gap: 6px;
             margin-bottom: 10px;
         }
-        
+
         .ksb-item {
             background: #ecf0f1;
             padding: 4px 10px;
@@ -120,22 +147,33 @@
             cursor: pointer;
             position: relative;
         }
-        
+
         .ksb-item:hover {
             background: #bdc3c7;
             transform: scale(1.05);
         }
-        
-        .knowledge-item { background: #ebf3fd; color: #2980b9; }
-        .skills-item { background: #eafaf1; color: #27ae60; }
-        .behaviours-item { background: #fdf2f2; color: #c0392b; }
-        
+
+        .knowledge-item {
+            background: #ebf3fd;
+            color: #2980b9;
+        }
+
+        .skills-item {
+            background: #eafaf1;
+            color: #27ae60;
+        }
+
+        .behaviours-item {
+            background: #fdf2f2;
+            color: #c0392b;
+        }
+
         .cross-phase {
             background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
             border: none;
             margin-top: 30px;
         }
-        
+
         .legend {
             display: flex;
             justify-content: center;
@@ -145,41 +183,41 @@
             background: #f8f9fa;
             border-radius: 15px;
         }
-        
+
         .legend-item {
             display: flex;
             align-items: center;
             gap: 8px;
             font-weight: 600;
         }
-        
+
         .stats {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
             margin-top: 30px;
         }
-        
+
         .stat-card {
             background: #f8f9fa;
             padding: 20px;
             border-radius: 15px;
             text-align: center;
         }
-        
+
         .stat-number {
             font-size: 2.5em;
             font-weight: 700;
             color: #2c3e50;
             display: block;
         }
-        
+
         .stat-label {
             color: #7f8c8d;
             font-weight: 600;
             margin-top: 5px;
         }
-        
+
         .tooltip {
             position: fixed;
             background: #2c3e50;
@@ -189,24 +227,24 @@
             font-size: 0.9em;
             max-width: 400px;
             z-index: 1000;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
             opacity: 0;
             pointer-events: none;
             transition: opacity 0.3s ease;
             line-height: 1.4;
         }
-        
+
         .tooltip.show {
             opacity: 1;
         }
-        
+
         .reference-section {
             margin-top: 50px;
             background: #f8f9fa;
             padding: 30px;
             border-radius: 15px;
         }
-        
+
         .reference-title {
             font-size: 1.8em;
             font-weight: 700;
@@ -214,20 +252,20 @@
             margin-bottom: 20px;
             text-align: center;
         }
-        
+
         .reference-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             gap: 30px;
         }
-        
+
         .reference-category {
             background: white;
             padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         }
-        
+
         .reference-category-title {
             font-size: 1.3em;
             font-weight: 700;
@@ -236,17 +274,17 @@
             align-items: center;
             gap: 10px;
         }
-        
+
         .reference-item {
             margin-bottom: 12px;
             padding: 8px 0;
             border-bottom: 1px solid #ecf0f1;
         }
-        
+
         .reference-item:last-child {
             border-bottom: none;
         }
-        
+
         .reference-code {
             font-weight: 700;
             color: #2c3e50;
@@ -254,18 +292,18 @@
             text-decoration: none;
             transition: color 0.2s ease;
         }
-        
+
         .reference-code:hover {
             color: #3498db;
         }
-        
+
         .reference-text {
             margin-top: 4px;
             color: #555;
             font-size: 0.95em;
             line-height: 1.4;
         }
-        
+
         .scroll-to-top {
             position: fixed;
             bottom: 30px;
@@ -280,45 +318,49 @@
             cursor: pointer;
             opacity: 0;
             transition: opacity 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
-        
+
         .scroll-to-top.show {
             opacity: 1;
         }
-        
+
         .scroll-to-top:hover {
             background: #2980b9;
         }
-        
+
         @media (max-width: 768px) {
             .phases-container {
                 grid-template-columns: 1fr;
             }
+
             .legend {
                 flex-direction: column;
                 align-items: center;
                 gap: 15px;
             }
+
             .reference-grid {
                 grid-template-columns: 1fr;
             }
+
             .tooltip {
                 max-width: 300px;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>KSB Mapping to CRISP-ML(Q)</h1>
         <p class="subtitle">Knowledge, Skills & Behaviours aligned with Machine Learning Lifecycle Phases</p>
-        
+
         <div class="phases-container">
             <div class="phase phase1">
                 <h3 class="phase-title">Phase 1: Business & Data Understanding</h3>
                 <p class="phase-description">Define scope, success criteria, and data feasibility</p>
-                
+
                 <div class="ksb-section">
                     <div class="ksb-type">
                         <span class="ksb-icon knowledge-icon"></span>
@@ -340,7 +382,7 @@
                         <span class="ksb-item knowledge-item" data-ksb="K29">K29</span>
                     </div>
                 </div>
-                
+
                 <div class="ksb-section">
                     <div class="ksb-type">
                         <span class="ksb-icon skills-icon"></span>
@@ -355,7 +397,7 @@
                         <span class="ksb-item skills-item" data-ksb="S30">S30</span>
                     </div>
                 </div>
-                
+
                 <div class="ksb-section">
                     <div class="ksb-type">
                         <span class="ksb-icon behaviours-icon"></span>
@@ -367,11 +409,11 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="phase phase2">
                 <h3 class="phase-title">Phase 2: Data Preparation</h3>
                 <p class="phase-description">Data selection, cleaning, feature engineering, and standardisation</p>
-                
+
                 <div class="ksb-section">
                     <div class="ksb-type">
                         <span class="ksb-icon knowledge-icon"></span>
@@ -388,7 +430,7 @@
                         <span class="ksb-item knowledge-item" data-ksb="K24">K24</span>
                     </div>
                 </div>
-                
+
                 <div class="ksb-section">
                     <div class="ksb-type">
                         <span class="ksb-icon skills-icon"></span>
@@ -406,7 +448,7 @@
                         <span class="ksb-item skills-item" data-ksb="S28">S28</span>
                     </div>
                 </div>
-                
+
                 <div class="ksb-section">
                     <div class="ksb-type">
                         <span class="ksb-icon behaviours-icon"></span>
@@ -418,11 +460,11 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="phase phase3">
                 <h3 class="phase-title">Phase 3: Modeling</h3>
                 <p class="phase-description">Model selection, training, and optimisation</p>
-                
+
                 <div class="ksb-section">
                     <div class="ksb-type">
                         <span class="ksb-icon knowledge-icon"></span>
@@ -440,7 +482,7 @@
                         <span class="ksb-item knowledge-item" data-ksb="K31">K31</span>
                     </div>
                 </div>
-                
+
                 <div class="ksb-section">
                     <div class="ksb-type">
                         <span class="ksb-icon skills-icon"></span>
@@ -459,7 +501,7 @@
                         <span class="ksb-item skills-item" data-ksb="S32">S32</span>
                     </div>
                 </div>
-                
+
                 <div class="ksb-section">
                     <div class="ksb-type">
                         <span class="ksb-icon behaviours-icon"></span>
@@ -472,11 +514,11 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="phase phase4">
                 <h3 class="phase-title">Phase 4: Evaluation</h3>
                 <p class="phase-description">Model assessment, validation, and deployment readiness</p>
-                
+
                 <div class="ksb-section">
                     <div class="ksb-type">
                         <span class="ksb-icon knowledge-icon"></span>
@@ -490,7 +532,7 @@
                         <span class="ksb-item knowledge-item" data-ksb="K21">K21</span>
                     </div>
                 </div>
-                
+
                 <div class="ksb-section">
                     <div class="ksb-type">
                         <span class="ksb-icon skills-icon"></span>
@@ -506,7 +548,7 @@
                         <span class="ksb-item skills-item" data-ksb="S29">S29</span>
                     </div>
                 </div>
-                
+
                 <div class="ksb-section">
                     <div class="ksb-type">
                         <span class="ksb-icon behaviours-icon"></span>
@@ -518,11 +560,11 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="phase phase5">
                 <h3 class="phase-title">Phase 5: Deployment</h3>
                 <p class="phase-description">Model integration into production systems</p>
-                
+
                 <div class="ksb-section">
                     <div class="ksb-type">
                         <span class="ksb-icon knowledge-icon"></span>
@@ -536,7 +578,7 @@
                         <span class="ksb-item knowledge-item" data-ksb="K31">K31</span>
                     </div>
                 </div>
-                
+
                 <div class="ksb-section">
                     <div class="ksb-type">
                         <span class="ksb-icon skills-icon"></span>
@@ -552,7 +594,7 @@
                         <span class="ksb-item skills-item" data-ksb="S33">S33</span>
                     </div>
                 </div>
-                
+
                 <div class="ksb-section">
                     <div class="ksb-type">
                         <span class="ksb-icon behaviours-icon"></span>
@@ -564,11 +606,11 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="phase phase6">
                 <h3 class="phase-title">Phase 6: Monitoring & Maintenance</h3>
                 <p class="phase-description">Continuous monitoring, performance tracking, and model updates</p>
-                
+
                 <div class="ksb-section">
                     <div class="ksb-type">
                         <span class="ksb-icon knowledge-icon"></span>
@@ -582,7 +624,7 @@
                         <span class="ksb-item knowledge-item" data-ksb="K28">K28</span>
                     </div>
                 </div>
-                
+
                 <div class="ksb-section">
                     <div class="ksb-type">
                         <span class="ksb-icon skills-icon"></span>
@@ -601,7 +643,7 @@
                         <span class="ksb-item skills-item" data-ksb="S34">S34</span>
                     </div>
                 </div>
-                
+
                 <div class="ksb-section">
                     <div class="ksb-type">
                         <span class="ksb-icon behaviours-icon"></span>
@@ -615,11 +657,11 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="phase cross-phase">
             <h3 class="phase-title">Cross-Phase KSBs</h3>
             <p class="phase-description">Components that apply across multiple phases throughout the ML lifecycle</p>
-            
+
             <div class="ksb-section">
                 <div class="ksb-type">
                     <span class="ksb-icon knowledge-icon"></span>
@@ -630,7 +672,7 @@
                     <span class="ksb-item knowledge-item" data-ksb="K29">K29</span>
                 </div>
             </div>
-            
+
             <div class="ksb-section">
                 <div class="ksb-type">
                     <span class="ksb-icon skills-icon"></span>
@@ -643,7 +685,7 @@
                     <span class="ksb-item skills-item" data-ksb="S30">S30</span>
                 </div>
             </div>
-            
+
             <div class="ksb-section">
                 <div class="ksb-type">
                     <span class="ksb-icon behaviours-icon"></span>
@@ -656,7 +698,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="legend">
             <div class="legend-item">
                 <span class="ksb-icon knowledge-icon"></span>
@@ -671,7 +713,7 @@
                 <span>Behaviours Components (B)</span>
             </div>
         </div>
-        
+
         <div class="stats">
             <div class="stat-card">
                 <span class="stat-number">31</span>
@@ -690,7 +732,7 @@
                 <div class="stat-label">Total KSBs</div>
             </div>
         </div>
-        
+
         <div class="reference-section">
             <h2 class="reference-title">Complete KSB Reference</h2>
             <div class="reference-grid">
@@ -701,182 +743,247 @@
                     </h3>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K1">K1</a>
-                        <div class="reference-text">The purpose, methodologies and applications for ML AI solutions such as Machine Learning, Computer (Machine) Vision, batched learning systems, Robotics, Generative Transformer Models and Natural & Large Language Processing (NLP and LLMs) Models.</div>
+                        <div class="reference-text">The purpose, methodologies and applications for ML AI solutions such
+                            as Machine Learning, Computer (Machine) Vision, batched learning systems, Robotics,
+                            Generative Transformer Models and Natural & Large Language Processing (NLP and LLMs) Models.
+                        </div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K2">K2</a>
-                        <div class="reference-text">The stages of the machine learning lifecycle. Including establishing the model objectives, data preparation, building and training the model, ML problem framing, testing and evaluating the model using the preferred framework, deploying the modelling and monitoring, maintaining and updating the model using process frameworks such as Quality Assurance and either online, continuous (CLS) or batched learning systems.</div>
+                        <div class="reference-text">The stages of the machine learning lifecycle. Including establishing
+                            the model objectives, data preparation, building and training the model, ML problem framing,
+                            testing and evaluating the model using the preferred framework, deploying the modelling and
+                            monitoring, maintaining and updating the model using process frameworks such as Quality
+                            Assurance and either online, continuous (CLS) or batched learning systems.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K3">K3</a>
-                        <div class="reference-text">Vulnerabilities related to confidentiality, authentication, non-repudiation, service integrity, network security, planned or unplanned adversarial danger, threat or attack, host OS security, physical security and the implications and preventative mitigations for these at all stages of the machine learning lifecycle.</div>
+                        <div class="reference-text">Vulnerabilities related to confidentiality, authentication,
+                            non-repudiation, service integrity, network security, planned or unplanned adversarial
+                            danger, threat or attack, host OS security, physical security and the implications and
+                            preventative mitigations for these at all stages of the machine learning lifecycle.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K4">K4</a>
-                        <div class="reference-text">Project Management methodologies and techniques for machine learning activities such as CRISP-ML Cross Industry Standard Process.</div>
+                        <div class="reference-text">Project Management methodologies and techniques for machine learning
+                            activities such as CRISP-ML Cross Industry Standard Process.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K5">K5</a>
-                        <div class="reference-text">Differences and applications of machine learning methods, and models such as: supervised learning; semi supervised learning; unsupervised learning; natural language processing; reinforcement learning; ensemble learning; predictive using tools for experiment tracking, orchestration, versioning, deployment and monitoring.</div>
+                        <div class="reference-text">Differences and applications of machine learning methods, and models
+                            such as: supervised learning; semi supervised learning; unsupervised learning; natural
+                            language processing; reinforcement learning; ensemble learning; predictive using tools for
+                            experiment tracking, orchestration, versioning, deployment and monitoring.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K6">K6</a>
-                        <div class="reference-text">The risks that might occur for example bias, security, quality or over fitting in the product lifecycle during building, testing and through to deployment of ML models in the live environment.</div>
+                        <div class="reference-text">The risks that might occur for example bias, security, quality or
+                            over fitting in the product lifecycle during building, testing and through to deployment of
+                            ML models in the live environment.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K7">K7</a>
-                        <div class="reference-text">How to identify and select the performance metrics of the proposed model in the context of the business need.</div>
+                        <div class="reference-text">How to identify and select the performance metrics of the proposed
+                            model in the context of the business need.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K8">K8</a>
-                        <div class="reference-text">The processes used to identify variables and features that can impact stability of model performance during testing and when applying changes to existing models in the live environment.</div>
+                        <div class="reference-text">The processes used to identify variables and features that can
+                            impact stability of model performance during testing and when applying changes to existing
+                            models in the live environment.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K9">K9</a>
-                        <div class="reference-text">The importance of feature engineering, selection and pre-processing in effective machine learning.</div>
+                        <div class="reference-text">The importance of feature engineering, selection and pre-processing
+                            in effective machine learning.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K10">K10</a>
-                        <div class="reference-text">Machine learning implementation principles for data engineering solutions including quality, security, efficiency, validity, training, testing and tuning.</div>
+                        <div class="reference-text">Machine learning implementation principles for data engineering
+                            solutions including quality, security, efficiency, validity, training, testing and tuning.
+                        </div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K11">K11</a>
-                        <div class="reference-text">How machine learning methods are applied to maximise the impact to the organisation.</div>
+                        <div class="reference-text">How machine learning methods are applied to maximise the impact to
+                            the organisation.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K12">K12</a>
-                        <div class="reference-text">Deployment approaches for new data pipelines and automated processes.</div>
+                        <div class="reference-text">Deployment approaches for new data pipelines and automated
+                            processes.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K13">K13</a>
-                        <div class="reference-text">Data and information security standards, ethical practices, policies and procedures relevant to data management activities such as data lineage, data retention and metadata management.</div>
+                        <div class="reference-text">Data and information security standards, ethical practices, policies
+                            and procedures relevant to data management activities such as data lineage, data retention
+                            and metadata management.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K14">K14</a>
-                        <div class="reference-text">Change management processes for ML solutions; recording and logging change using appropriate tools and documentation.</div>
+                        <div class="reference-text">Change management processes for ML solutions; recording and logging
+                            change using appropriate tools and documentation.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K15">K15</a>
-                        <div class="reference-text">The implications of data types (for example variety, quality, formats) on security, scalability, governance for ML and or AI infrastructure, and cost of local, remote or distributed solutions such as cloud and other SaaS and PasS ML/AI providers.</div>
+                        <div class="reference-text">The implications of data types (for example variety, quality,
+                            formats) on security, scalability, governance for ML and or AI infrastructure, and cost of
+                            local, remote or distributed solutions such as cloud and other SaaS and PasS ML/AI
+                            providers.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K16">K16</a>
-                        <div class="reference-text">How to use programming languages, integrated development environments and modern machine learning libraries.</div>
+                        <div class="reference-text">How to use programming languages, integrated development
+                            environments and modern machine learning libraries.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K17">K17</a>
-                        <div class="reference-text">Principles for engineering environmental sustainable ML solutions, that support organisational strategies and objectives for environmental sustainability.</div>
+                        <div class="reference-text">Principles for engineering environmental sustainable ML solutions,
+                            that support organisational strategies and objectives for environmental sustainability.
+                        </div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K18">K18</a>
-                        <div class="reference-text">The relationship between mathematical principles and core techniques in machine learning and data science within the organisational context.</div>
+                        <div class="reference-text">The relationship between mathematical principles and core techniques
+                            in machine learning and data science within the organisational context.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K19">K19</a>
-                        <div class="reference-text">How to solve problems and evaluate software solutions via analysis of test data including synthetic data and results from research, feasibility, acceptance and usability testing.</div>
+                        <div class="reference-text">How to solve problems and evaluate software solutions via analysis
+                            of test data including synthetic data and results from research, feasibility, acceptance and
+                            usability testing.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K20">K20</a>
-                        <div class="reference-text">Sources of error and algorithmic bias, including how they may be affected by choice of dataset and methodologies applied using practices such as Explicability and Explainable AI (XAI).</div>
+                        <div class="reference-text">Sources of error and algorithmic bias, including how they may be
+                            affected by choice of dataset and methodologies applied using practices such as
+                            Explicability and Explainable AI (XAI).</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K21">K21</a>
-                        <div class="reference-text">The methods and techniques used to communicate concepts and messages to meet the needs of the audience, adapting communication techniques accordingly.</div>
+                        <div class="reference-text">The methods and techniques used to communicate concepts and messages
+                            to meet the needs of the audience, adapting communication techniques accordingly.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K22">K22</a>
-                        <div class="reference-text">Approaches and strategies to stakeholder engagement including engagement with the end user.</div>
+                        <div class="reference-text">Approaches and strategies to stakeholder engagement including
+                            engagement with the end user.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K23">K23</a>
-                        <div class="reference-text">How machine learning and data science techniques support and enhance the work of other members of the team.</div>
+                        <div class="reference-text">How machine learning and data science techniques support and enhance
+                            the work of other members of the team.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K24">K24</a>
-                        <div class="reference-text">Concepts of data governance, including regulatory requirements, data privacy, security, trustworthiness and quality control.</div>
+                        <div class="reference-text">Concepts of data governance, including regulatory requirements, data
+                            privacy, security, trustworthiness and quality control.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K25">K25</a>
-                        <div class="reference-text">Legislation, regulation, governance and guidance assurance frameworks for example AREA or SAFE D and their application to the safe interoperable use of data, machine learning and artificial intelligence.</div>
+                        <div class="reference-text">Legislation, regulation, governance and guidance assurance
+                            frameworks for example AREA or SAFE D and their application to the safe interoperable use of
+                            data, machine learning and artificial intelligence.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K26">K26</a>
-                        <div class="reference-text">The ethical aspects associated with the use and collation of data and machine learning models.</div>
+                        <div class="reference-text">The ethical aspects associated with the use and collation of data
+                            and machine learning models.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K27">K27</a>
-                        <div class="reference-text">What the cyber security culture in an organisation is, and how it may contribute to security risk.</div>
+                        <div class="reference-text">What the cyber security culture in an organisation is, and how it
+                            may contribute to security risk.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K28">K28</a>
-                        <div class="reference-text">How to identify trends and emerging technologies to ensure knowledge is up to date with new developments in machine learning and AI such as AI embedded within tooling.</div>
+                        <div class="reference-text">How to identify trends and emerging technologies to ensure knowledge
+                            is up to date with new developments in machine learning and AI such as AI embedded within
+                            tooling.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K29">K29</a>
-                        <div class="reference-text">How own role supports ML solutions in accordance with organisational strategies, business requirements, Corporate Governance Principles, Social Corporate Responsibilities, legal regulations and Ethical Practices.</div>
+                        <div class="reference-text">How own role supports ML solutions in accordance with organisational
+                            strategies, business requirements, Corporate Governance Principles, Social Corporate
+                            Responsibilities, legal regulations and Ethical Practices.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K30">K30</a>
-                        <div class="reference-text">AI based approaches, including those provided by third-party vendors' (Application Programming Interfaces), into existing and new processes.</div>
+                        <div class="reference-text">AI based approaches, including those provided by third-party
+                            vendors' (Application Programming Interfaces), into existing and new processes.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="K31">K31</a>
-                        <div class="reference-text">Software development best practices; for example, software testing, version control, continuous integration and continuous delivery.</div>
+                        <div class="reference-text">Software development best practices; for example, software testing,
+                            version control, continuous integration and continuous delivery.</div>
                     </div>
                 </div>
-                
+
                 <div class="reference-category">
                     <h3 class="reference-category-title">
                         <span class="ksb-icon skills-icon"></span>
-                        Skills Components 
+                        Skills Components
                     </h3>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S1">S1</a>
-                        <div class="reference-text">Assess vulnerabilities of the proposed design, to ensure that security considerations are built in from inception and throughout the development process.</div>
+                        <div class="reference-text">Assess vulnerabilities of the proposed design, to ensure that
+                            security considerations are built in from inception and throughout the development process.
+                        </div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S2">S2</a>
-                        <div class="reference-text">Translate business needs and technical problems to scope machine learning engineering solutions.</div>
+                        <div class="reference-text">Translate business needs and technical problems to scope machine
+                            learning engineering solutions.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S3">S3</a>
-                        <div class="reference-text">Select and engineer data sets, algorithms and modelling techniques required to develop the machine learning solution.</div>
+                        <div class="reference-text">Select and engineer data sets, algorithms and modelling techniques
+                            required to develop the machine learning solution.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S4">S4</a>
-                        <div class="reference-text">Apply methodologies and project management techniques for the machine learning activities.</div>
+                        <div class="reference-text">Apply methodologies and project management techniques for the
+                            machine learning activities.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S5">S5</a>
-                        <div class="reference-text">Create and deploy models to produce machine learning solutions.</div>
+                        <div class="reference-text">Create and deploy models to produce machine learning solutions.
+                        </div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S6">S6</a>
-                        <div class="reference-text">Document the creation, operation and lifecycle management of assets during the model lifecycle.</div>
+                        <div class="reference-text">Document the creation, operation and lifecycle management of assets
+                            during the model lifecycle.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S7">S7</a>
-                        <div class="reference-text">Apply techniques for output model testing and tuning to assess accuracy, fit, validity and robustness.</div>
+                        <div class="reference-text">Apply techniques for output model testing and tuning to assess
+                            accuracy, fit, validity and robustness.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S8">S8</a>
-                        <div class="reference-text">Assess system vulnerabilities and mitigate the threats or risks to assets, data and cyber security.</div>
+                        <div class="reference-text">Assess system vulnerabilities and mitigate the threats or risks to
+                            assets, data and cyber security.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S9">S9</a>
-                        <div class="reference-text">Refine or re-engineer the model to improve solution performance.</div>
+                        <div class="reference-text">Refine or re-engineer the model to improve solution performance.
+                        </div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S10">S10</a>
-                        <div class="reference-text">Apply techniques for monitoring models in the live environment to check they remain fit for purpose and stable.</div>
+                        <div class="reference-text">Apply techniques for monitoring models in the live environment to
+                            check they remain fit for purpose and stable.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S11">S11</a>
-                        <div class="reference-text">Consider the associated regulatory, legal, ethical and governance issues when evaluating choices at each stage of the data process.</div>
+                        <div class="reference-text">Consider the associated regulatory, legal, ethical and governance
+                            issues when evaluating choices at each stage of the data process.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S12">S12</a>
-                        <div class="reference-text">Apply machine learning and data science techniques to solve complex business problems.</div>
+                        <div class="reference-text">Apply machine learning and data science techniques to solve complex
+                            business problems.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S13">S13</a>
@@ -884,11 +991,14 @@
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S14">S14</a>
-                        <div class="reference-text">Analyse test data, interpret results and evaluate the suitability of proposed solutions both new and inherited models, considering current and future business requirements.</div>
+                        <div class="reference-text">Analyse test data, interpret results and evaluate the suitability of
+                            proposed solutions both new and inherited models, considering current and future business
+                            requirements.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S15">S15</a>
-                        <div class="reference-text">Identify, consider and advocate for ML solutions to deliver an environmental and operational sustainable outcome.</div>
+                        <div class="reference-text">Identify, consider and advocate for ML solutions to deliver an
+                            environmental and operational sustainable outcome.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S16">S16</a>
@@ -896,78 +1006,101 @@
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S17">S17</a>
-                        <div class="reference-text">Complete audit activities in compliance with policies, governance, industry regulation and standards.</div>
+                        <div class="reference-text">Complete audit activities in compliance with policies, governance,
+                            industry regulation and standards.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S18">S18</a>
-                        <div class="reference-text">Consider the risks with using digital and physical supply chains.</div>
+                        <div class="reference-text">Consider the risks with using digital and physical supply chains.
+                        </div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S19">S19</a>
-                        <div class="reference-text">Ensure the model capacity is scaled in proportion to the operating requirements.</div>
+                        <div class="reference-text">Ensure the model capacity is scaled in proportion to the operating
+                            requirements.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S20">S20</a>
-                        <div class="reference-text">Support the evaluation and validation of machine learning models and statistical evidence to minimise algorithmic bias being introduced.</div>
+                        <div class="reference-text">Support the evaluation and validation of machine learning models and
+                            statistical evidence to minimise algorithmic bias being introduced.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S21">S21</a>
-                        <div class="reference-text">Monitor data curation and data quality controls including for synthetic data.</div>
+                        <div class="reference-text">Monitor data curation and data quality controls including for
+                            synthetic data.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S22">S22</a>
-                        <div class="reference-text">Identify and select the machine learning or artificial intelligence platform architecture and specific hardware, to contribute to solving a computational problem using allocated resources.</div>
+                        <div class="reference-text">Identify and select the machine learning or artificial intelligence
+                            platform architecture and specific hardware, to contribute to solving a computational
+                            problem using allocated resources.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S23">S23</a>
-                        <div class="reference-text">Identify and embed changes in work to deliver sustainable outcomes.</div>
+                        <div class="reference-text">Identify and embed changes in work to deliver sustainable outcomes.
+                        </div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S24">S24</a>
-                        <div class="reference-text">Monitor model data drift, using performance metrics to ensure systems are robust when moving outside of their domain of applicability.</div>
+                        <div class="reference-text">Monitor model data drift, using performance metrics to ensure
+                            systems are robust when moving outside of their domain of applicability.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S25">S25</a>
-                        <div class="reference-text">Develop a process to decommission assets in line with policy and procedures. Manage current and legacy models in line with industry approaches.</div>
+                        <div class="reference-text">Develop a process to decommission assets in line with policy and
+                            procedures. Manage current and legacy models in line with industry approaches.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S26">S26</a>
-                        <div class="reference-text">Undertake independent, impartial decision-making respecting the opinions and views of others in complex, unpredictable and changing circumstances.</div>
+                        <div class="reference-text">Undertake independent, impartial decision-making respecting the
+                            opinions and views of others in complex, unpredictable and changing circumstances.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S27">S27</a>
-                        <div class="reference-text">Coordinate, negotiate with and manage expectations of diverse stakeholders suppliers and multi-disciplinary teams with conflicting priorities, interests and timescales.</div>
+                        <div class="reference-text">Coordinate, negotiate with and manage expectations of diverse
+                            stakeholders suppliers and multi-disciplinary teams with conflicting priorities, interests
+                            and timescales.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S28">S28</a>
-                        <div class="reference-text">Produce and maintain technical documentation explaining the data product, that meets organisational, technical and non-technical user requirements, retaining critical information.</div>
+                        <div class="reference-text">Produce and maintain technical documentation explaining the data
+                            product, that meets organisational, technical and non-technical user requirements, retaining
+                            critical information.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S29">S29</a>
-                        <div class="reference-text">Create and disseminate reports, presentations and other documentation that details the model development to confirm stakeholder approval for handover to implementation.</div>
+                        <div class="reference-text">Create and disseminate reports, presentations and other
+                            documentation that details the model development to confirm stakeholder approval for
+                            handover to implementation.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S30">S30</a>
-                        <div class="reference-text">Comply with equality, diversity, and inclusion policies and procedures in the workplace.</div>
+                        <div class="reference-text">Comply with equality, diversity, and inclusion policies and
+                            procedures in the workplace.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S31">S31</a>
-                        <div class="reference-text">Horizon scan to identify new technological developments that offer increased performance of data products.</div>
+                        <div class="reference-text">Horizon scan to identify new technological developments that offer
+                            increased performance of data products.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S32">S32</a>
-                        <div class="reference-text">Apply Machine Learning principles and standards such as, organisational policies, procedures or professional body requirements.</div>
+                        <div class="reference-text">Apply Machine Learning principles and standards such as,
+                            organisational policies, procedures or professional body requirements.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S33">S33</a>
-                        <div class="reference-text">Integrate AI-based approaches, including those provided by third-party vendors' Application Programming Interfaces, into existing and new processes.</div>
+                        <div class="reference-text">Integrate AI-based approaches, including those provided by
+                            third-party vendors' Application Programming Interfaces, into existing and new processes.
+                        </div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="S34">S34</a>
-                        <div class="reference-text">Proactive identification of the potential for automation for example through AI solutions embedded within tooling.</div>
+                        <div class="reference-text">Proactive identification of the potential for automation for example
+                            through AI solutions embedded within tooling.</div>
                     </div>
                 </div>
-                
+
                 <div class="reference-category">
                     <h3 class="reference-category-title">
                         <span class="ksb-icon behaviours-icon"></span>
@@ -975,19 +1108,24 @@
                     </h3>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="B1">B1</a>
-                        <div class="reference-text">Uses initiative and innovation concerning new and emerging technologies through self directed learning and horizon scanning.</div>
+                        <div class="reference-text">Uses initiative and innovation concerning new and emerging
+                            technologies through self directed learning and horizon scanning.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="B2">B2</a>
-                        <div class="reference-text">Takes personal responsibility and prioritises sustainable outcomes in how they carry out the duties of their role.</div>
+                        <div class="reference-text">Takes personal responsibility and prioritises sustainable outcomes
+                            in how they carry out the duties of their role.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="B3">B3</a>
-                        <div class="reference-text">Acts inclusively when collaborating with people from technical and non-technical backgrounds. Contributing to knowledge sharing, management and empowerment across the broader team.</div>
+                        <div class="reference-text">Acts inclusively when collaborating with people from technical and
+                            non-technical backgrounds. Contributing to knowledge sharing, management and empowerment
+                            across the broader team.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="B4">B4</a>
-                        <div class="reference-text">Acts with integrity, giving due regard to legal, ethical and regulatory requirements.</div>
+                        <div class="reference-text">Acts with integrity, giving due regard to legal, ethical and
+                            regulatory requirements.</div>
                     </div>
                     <div class="reference-item">
                         <a href="#" class="reference-code" data-ksb="B5">B5</a>
@@ -996,84 +1134,84 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="tooltip" id="tooltip"></div>
         <button class="scroll-to-top" id="scrollToTop">↑</button>
     </div>
-    
+
     <script>
         // KSB data for tooltips
         const ksbData = {
-            'K1': 'The purpose, methodologies and applications for ML AI solutions such as Machine Learning, Computer (Machine) Vision, batched learning systems, Robotics, Generative Transformer Models and Natural & Large Language Processing (NLP and LLMs) Models.',
-            'K2': 'The stages of the machine learning lifecycle. Including establishing the model objectives, data preparation, building and training the model, ML problem framing, testing and evaluating the model using the preferred framework, deploying the modelling and monitoring, maintaining and updating the model using process frameworks such as Quality Assurance and either online, continuous (CLS) or batched learning systems.',
-            'K3': 'Vulnerabilities related to confidentiality, authentication, non-repudiation, service integrity, network security, planned or unplanned adversarial danger, threat or attack, host OS security, physical security and the implications and preventative mitigations for these at all stages of the machine learning lifecycle.',
-            'K4': 'Project Management methodologies and techniques for machine learning activities such as CRISP-ML Cross Industry Standard Process.',
-            'K5': 'Differences and applications of machine learning methods, and models such as: supervised learning; semi supervised learning; unsupervised learning; natural language processing; reinforcement learning; ensemble learning; predictive using tools for experiment tracking, orchestration, versioning, deployment and monitoring.',
-            'K6': 'The risks that might occur for example bias, security, quality or over fitting in the product lifecycle during building, testing and through to deployment of ML models in the live environment.',
-            'K7': 'How to identify and select the performance metrics of the proposed model in the context of the business need.',
-            'K8': 'The processes used to identify variables and features that can impact stability of model performance during testing and when applying changes to existing models in the live environment.',
-            'K9': 'The importance of feature engineering, selection and pre-processing in effective machine learning.',
-            'K10': 'Machine learning implementation principles for data engineering solutions including quality, security, efficiency, validity, training, testing and tuning.',
-            'K11': 'How machine learning methods are applied to maximise the impact to the organisation.',
-            'K12': 'Deployment approaches for new data pipelines and automated processes.',
-            'K13': 'Data and information security standards, ethical practices, policies and procedures relevant to data management activities such as data lineage, data retention and metadata management.',
-            'K14': 'Change management processes for ML solutions; recording and logging change using appropriate tools and documentation.',
-            'K15': 'The implications of data types (for example variety, quality, formats) on security, scalability, governance for ML and or AI infrastructure, and cost of local, remote or distributed solutions such as cloud and other SaaS and PasS ML/AI providers.',
-            'K16': 'How to use programming languages, integrated development environments and modern machine learning libraries.',
-            'K17': 'Principles for engineering environmental sustainable ML solutions, that support organisational strategies and objectives for environmental sustainability.',
-            'K18': 'The relationship between mathematical principles and core techniques in machine learning and data science within the organisational context.',
-            'K19': 'How to solve problems and evaluate software solutions via analysis of test data including synthetic data and results from research, feasibility, acceptance and usability testing.',
-            'K20': 'Sources of error and algorithmic bias, including how they may be affected by choice of dataset and methodologies applied using practices such as Explicability and Explainable AI (XAI).',
-            'K21': 'The methods and techniques used to communicate concepts and messages to meet the needs of the audience, adapting communication techniques accordingly.',
-            'K22': 'Approaches and strategies to stakeholder engagement including engagement with the end user.',
-            'K23': 'How machine learning and data science techniques support and enhance the work of other members of the team.',
-            'K24': 'Concepts of data governance, including regulatory requirements, data privacy, security, trustworthiness and quality control.',
-            'K25': 'Legislation, regulation, governance and guidance assurance frameworks for example AREA or SAFE D and their application to the safe interoperable use of data, machine learning and artificial intelligence.',
-            'K26': 'The ethical aspects associated with the use and collation of data and machine learning models.',
-            'K27': 'What the cyber security culture in an organisation is, and how it may contribute to security risk.',
-            'K28': 'How to identify trends and emerging technologies to ensure knowledge is up to date with new developments in machine learning and AI such as AI embedded within tooling.',
-            'K29': 'How own role supports ML solutions in accordance with organisational strategies, business requirements, Corporate Governance Principles, Social Corporate Responsibilities, legal regulations and Ethical Practices.',
-            'K30': 'AI based approaches, including those provided by third-party vendors\' (Application Programming Interfaces), into existing and new processes.',
-            'K31': 'Software development best practices; for example, software testing, version control, continuous integration and continuous delivery.',
-            'S1': 'Assess vulnerabilities of the proposed design, to ensure that security considerations are built in from inception and throughout the development process.',
-            'S2': 'Translate business needs and technical problems to scope machine learning engineering solutions.',
-            'S3': 'Select and engineer data sets, algorithms and modelling techniques required to develop the machine learning solution.',
-            'S4': 'Apply methodologies and project management techniques for the machine learning activities.',
-            'S5': 'Create and deploy models to produce machine learning solutions.',
-            'S6': 'Document the creation, operation and lifecycle management of assets during the model lifecycle.',
-            'S7': 'Apply techniques for output model testing and tuning to assess accuracy, fit, validity and robustness.',
-            'S8': 'Assess system vulnerabilities and mitigate the threats or risks to assets, data and cyber security.',
-            'S9': 'Refine or re-engineer the model to improve solution performance.',
-            'S10': 'Apply techniques for monitoring models in the live environment to check they remain fit for purpose and stable.',
-            'S11': 'Consider the associated regulatory, legal, ethical and governance issues when evaluating choices at each stage of the data process.',
-            'S12': 'Apply machine learning and data science techniques to solve complex business problems.',
-            'S13': 'Track and test continual learning models.',
-            'S14': 'Analyse test data, interpret results and evaluate the suitability of proposed solutions both new and inherited models, considering current and future business requirements.',
-            'S15': 'Identify, consider and advocate for ML solutions to deliver an environmental and operational sustainable outcome.',
-            'S16': 'Transition prototypes into the live environment.',
-            'S17': 'Complete audit activities in compliance with policies, governance, industry regulation and standards.',
-            'S18': 'Consider the risks with using digital and physical supply chains.',
-            'S19': 'Ensure the model capacity is scaled in proportion to the operating requirements.',
-            'S20': 'Support the evaluation and validation of machine learning models and statistical evidence to minimise algorithmic bias being introduced.',
-            'S21': 'Monitor data curation and data quality controls including for synthetic data.',
-            'S22': 'Identify and select the machine learning or artificial intelligence platform architecture and specific hardware, to contribute to solving a computational problem using allocated resources.',
-            'S23': 'Identify and embed changes in work to deliver sustainable outcomes.',
-            'S24': 'Monitor model data drift, using performance metrics to ensure systems are robust when moving outside of their domain of applicability.',
-            'S25': 'Develop a process to decommission assets in line with policy and procedures. Manage current and legacy models in line with industry approaches.',
-            'S26': 'Undertake independent, impartial decision-making respecting the opinions and views of others in complex, unpredictable and changing circumstances.',
-            'S27': 'Coordinate, negotiate with and manage expectations of diverse stakeholders suppliers and multi-disciplinary teams with conflicting priorities, interests and timescales.',
-            'S28': 'Produce and maintain technical documentation explaining the data product, that meets organisational, technical and non-technical user requirements, retaining critical information.',
-            'S29': 'Create and disseminate reports, presentations and other documentation that details the model development to confirm stakeholder approval for handover to implementation.',
-            'S30': 'Comply with equality, diversity, and inclusion policies and procedures in the workplace.',
-            'S31': 'Horizon scan to identify new technological developments that offer increased performance of data products.',
-            'S32': 'Apply Machine Learning principles and standards such as, organisational policies, procedures or professional body requirements.',
-            'S33': 'Integrate AI-based approaches, including those provided by third-party vendors\' Application Programming Interfaces, into existing and new processes.',
-            'S34': 'Proactive identification of the potential for automation for example through AI solutions embedded within tooling.',
-            'B1': 'Uses initiative and innovation concerning new and emerging technologies through self directed learning and horizon scanning.',
-            'B2': 'Takes personal responsibility and prioritises sustainable outcomes in how they carry out the duties of their role.',
-            'B3': 'Acts inclusively when collaborating with people from technical and non-technical backgrounds. Contributing to knowledge sharing, management and empowerment across the broader team.',
-            'B4': 'Acts with integrity, giving due regard to legal, ethical and regulatory requirements.',
-            'B5': 'Operates in settings of technical complexity and uncertainty.'
+            'K1': "The purpose, methodologies and applications for ML AI solutions such as Machine Learning, Computer (Machine) Vision, batched learning systems, Robotics, Generative Transformer Models and Natural & Large Language Processing (NLP and LLMs) Models.",
+            'K2': "The stages of the machine learning lifecycle. Including establishing the model objectives, data preparation, building and training the model, ML problem framing, testing and evaluating the model using the preferred framework, deploying the modelling and monitoring, maintaining and updating the model using process frameworks such as Quality Assurance and either online, continuous (CLS) or batched learning systems.",
+            'K3': "Vulnerabilities related to confidentiality, authentication, non-repudiation, service integrity, network security, planned or unplanned adversarial danger, threat or attack, host OS security, physical security and the implications and preventative mitigations for these at all stages of the machine learning lifecycle.",
+            'K4': "Project Management methodologies and techniques for machine learning activities such as CRISP-ML Cross Industry Standard Process.",
+            'K5': "Differences and applications of machine learning methods, and models such as: supervised learning; semi supervised learning; unsupervised learning; natural language processing ; reinforcement learning; ensemble learning; predictive using tools for experiment tracking, orchestration, versioning, deployment and monitoring.",
+            'K6': "The risks that might occur for example bias, security, quality or over fitting in the product lifecycle during building, testing and through to deployment of ML models in the live environment.",
+            'K7': "How to identify and select the performance metrics of the proposed model in the context of the business need.",
+            'K8': "The processes used to identify variables and features that can impact stability of model performance during testing and when applying changes to existing models in the live environment.",
+            'K9': "The importance of feature engineering, selection and pre-processing in effective machine learning.",
+            'K10': "Machine learning implementation principles for data engineering solutions including quality, security, efficiency, validity, training, testing and tuning.",
+            'K11': "How machine learning methods are applied to maximise the impact to the organisation.",
+            'K12': "Deployment approaches for new data pipelines and automated processes.",
+            'K13': "Data and information security standards, ethical practices, policies and procedures relevant to data management activities such as data lineage, data retention and metadata management.",
+            'K14': "Change management processes for ML solutions; recording and logging change using appropriate tools and documentation.",
+            'K15': "The implications of data types ( for example variety, quality, formats) on security, scalability, governance for ML and or AI infrastructure, and cost of local, remote or distributed solutions such as cloud and other SaaS and PasS ML/AI providers.",
+            'K16': "How to use programming languages, integrated development environments and modern machine learning libraries.",
+            'K17': "Principles for engineering environmentally sustainable ML solutions, that support organisational strategies and objectives for environmental sustainability.",
+            'K18': "The relationship between mathematical principles and core techniques in machine learning and data science within the organisational context.",
+            'K19': "How to solve problems and evaluate software solutions via analysis of test data including synthetic data and results from research, feasibility, acceptance and usability testing.",
+            'K20': "Sources of error and algorithmic bias, including how they may be affected by choice of dataset and methodologies applied using practices such as Explicability and Explainable AI (XAI).",
+            'K21': "The methods and techniques used to communicate concepts and messages to meet the needs of the audience, adapting communication techniques accordingly.",
+            'K22': "Approaches and strategies to stakeholder engagement including engagement with the end user",
+            'K23': "How machine learning and data science techniques support and enhance the work of other members of the team.",
+            'K24': "Concepts of data governance, including regulatory requirements, data privacy, security, trustworthiness and quality control.",
+            'K25': "Legislation, regulation, governance and guidance assurance frameworks for example AREA or SAFE D and their application to the safe interoperable use of data, machine learning and artificial intelligence.",
+            'K26': "The ethical aspects associated with the use and collation of data and machine learning models.",
+            'K27': "What the cyber security culture in an organisation is, and how it may contribute to security risk.",
+            'K28': "How to identify trends and emerging technologies to ensure knowledge is up to date with new developments in machine learning and AI such as AI embedded within tooling.",
+            'K29': "How own role supports ML solutions in accordance with organisational strategies, business requirements, Corporate Governance Principles, Social Corporate Responsibilities, legal regulations and Ethical Practices.",
+            'K30': "AI based approaches, including those provided by third-party vendors’ (Application Programming Interfaces), into existing and new processes.",
+            'K31': "Software development best practices; for example, software testing, version control, continuous integration and continuous delivery.",
+            'S1': "Assess vulnerabilities of the proposed design, to ensure that security considerations are built in from inception and throughout the development process.",
+            'S2': "Translate business needs and technical problems to scope machine learning engineering solutions.",
+            'S3': "Select and engineer data sets, algorithms and modelling techniques required to develop the machine learning solution.",
+            'S4': "Apply methodologies and project management techniques for the machine learning activities.",
+            'S5': "Create and deploy models to produce machine learning solutions.",
+            'S6': "Document the creation, operation and lifecycle management of assets during the model lifecycle.",
+            'S7': "Apply techniques for output model testing and tuning to assess accuracy, fit, validity and robustness.",
+            'S8': "Assess system vulnerabilities and mitigate the threats or risks to assets, data and cyber security.",
+            'S9': "Refine or re-engineer the model to improve solution performance.",
+            'S10': "Apply techniques for monitoring models in the live environment to check they remain fit for purpose and stable.",
+            'S11': "Consider the associated regulatory, legal, ethical and governance issues when evaluating choices at each stage of the data process.",
+            'S12': "Apply machine learning and data science techniques to solve complex business problems.",
+            'S13': "Track and test continual learning models.",
+            'S14': "Analyse test data, interpret results and evaluate the suitability of proposed solutions both new and inherited models, considering current and future business requirements.",
+            'S15': "Identify, consider and advocate for ML solutions to deliver an environmental and operational sustainable outcome.",
+            'S16': "Transition prototypes into the live environment.",
+            'S17': "Complete audit activities in compliance with policies, governance, industry regulation and standards.",
+            'S18': "Consider the risks with using digital and physical supply chains.",
+            'S19': "Ensure the model capacity is scaled in proportion to the operating requirements.",
+            'S20': "Support the evaluation and validation of machine learning models and statistical evidence to minimise algorithmic bias being introduced.",
+            'S21': "Monitor data curation and data quality controls including for synthetic data.",
+            'S22': "Identify and select the machine learning or artificial intelligence platform architecture and specific hardware, to contribute to solving a computational problem using allocated resources.",
+            'S23': "Identify and embed changes in work to deliver sustainable outcomes.",
+            'S24': "Monitor model data drift, using performance metrics to ensure systems are robust when moving outside of their domain of applicability.",
+            'S25': "Develop a process to decommission assets in line with policy and procedures. Manage current and legacy models in line with industry approaches.",
+            'S26': "Undertake independent, impartial decision-making respecting the opinions and views of others in complex, unpredictable and changing circumstances.",
+            'S27': "Coordinate, negotiate with and manage expectations of diverse stakeholders suppliers and multi-disciplinary teams with conflicting priorities, interests and timescales.",
+            'S28': "Produce and maintain technical documentation explaining the data product, that meets organisational, technical and non-technical user requirements, retaining critical information.",
+            'S29': "Create and disseminate reports, presentations and other documentation that details the model development to confirm stakeholder approval for handover to implementation.",
+            'S30': "Comply with equality, diversity, and inclusion policies and procedures in the workplace.",
+            'S31': "Horizon scan to identify new technological developments that offer increased performance of data products.",
+            'S32': "Apply Machine Learning principles and standards such as, organisational policies, procedures or professional body requirements.",
+            'S33': "Integrate AI-based approaches, including those provided by third-party vendors’ Application Programming Interfaces, into existing and new processes.",
+            'S34': "Proactive identification of the potential for automation for example through AI solutions embedded within tooling.",
+            'B1': "Uses initiative and innovation concerning new and emerging technologies through self directed learning and horizon scanning.",
+            'B2': "Takes personal responsibility and prioritises sustainable outcomes in how they carry out the duties of their role.",
+            'B3': "Acts inclusively when collaborating with people from technical and non-technical backgrounds. Contributing to knowledge sharing, management and empowerment across the broader team.",
+            'B4': "Acts with integrity, giving due regard to legal, ethical and regulatory requirements.",
+            'B5': "Operates in settings of technical complexity and uncertainty.",
         };
 
         // Tooltip functionality
@@ -1086,13 +1224,13 @@
             if (text) {
                 tooltip.innerHTML = `<strong>${ksbCode}:</strong> ${text}`;
                 tooltip.classList.add('show');
-                
+
                 const rect = element.getBoundingClientRect();
                 const tooltipRect = tooltip.getBoundingClientRect();
-                
+
                 let left = rect.left + (rect.width / 2) - (tooltipRect.width / 2);
                 let top = rect.top - tooltipRect.height - 10;
-                
+
                 // Keep tooltip within viewport
                 if (left < 10) left = 10;
                 if (left + tooltipRect.width > window.innerWidth - 10) {
@@ -1101,7 +1239,7 @@
                 if (top < 10) {
                     top = rect.bottom + 10;
                 }
-                
+
                 tooltip.style.left = left + 'px';
                 tooltip.style.top = top + 'px';
             }
@@ -1125,18 +1263,18 @@
                 showTooltip(link, link.dataset.ksb);
             });
             link.addEventListener('mouseleave', hideTooltip);
-            
+
             // Scroll to corresponding KSB item when clicked
             link.addEventListener('click', (e) => {
                 e.preventDefault();
                 const ksbCode = link.dataset.ksb;
                 const targetItem = document.querySelector(`.ksb-item[data-ksb="${ksbCode}"]`);
                 if (targetItem) {
-                    targetItem.scrollIntoView({ 
-                        behaviour: 'smooth', 
-                        block: 'center' 
+                    targetItem.scrollIntoView({
+                        behaviour: 'smooth',
+                        block: 'center'
                     });
-                    
+
                     // Highlight the item briefly
                     targetItem.style.transform = 'scale(1.2)';
                     targetItem.style.boxShadow = '0 0 20px rgba(52, 152, 219, 0.6)';
@@ -1150,7 +1288,7 @@
 
         // Scroll to top functionality
         const scrollToTopBtn = document.getElementById('scrollToTop');
-        
+
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
                 scrollToTopBtn.classList.add('show');
